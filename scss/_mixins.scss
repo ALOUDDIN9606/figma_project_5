@@ -1,0 +1,20 @@
+@mixin df($d: row, $fw: wrap, $al: center, $js: center){
+    display: flex;
+    flex-wrap: $fw;
+    flex-direction: $d;
+    align-items: $al;
+    justify-content: $js;
+}
+
+@mixin btn($bg:#5454D4, $size: 17px, $textBg: #fff){
+    width: 211px;
+    height: 55px;
+    border: none;
+    background: $bg;
+    color: $textBg;
+    outline: none;
+    border-radius: 6px;
+    font-size: $size;
+    cursor: pointer;
+}
+

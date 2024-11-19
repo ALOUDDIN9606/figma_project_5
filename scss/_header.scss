@@ -1,0 +1,183 @@
+.header{
+    .navbar{
+        width: 100%;
+        margin: 30px 0 184px 0;
+        @include df(row, wrap, center, space-between);
+        &__img{
+            width: 200px;
+            height: 40px;
+            .navbar__image{
+                background-image: url('../assets/Logo\ Color.svg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 100%;
+             }
+        }
+        &__controller{
+            width: 327px;
+            max-height: 32px;
+            @include df(row, wrap, center, space-between);
+            .navbar__item{
+                list-style: none;
+                font-size: 15px;
+                color: $bg-sy;
+                font-size: 17px;
+                transition: 0.3s;
+            }
+            .navbar__item:hover{
+                transform: scale(1.2);
+                color: red;
+            }
+        }
+        .basket{
+            width: 100px;
+            height: 55px;
+            border-radius: 8px;         
+            cursor: pointer;
+            font-size: 17px;
+            display: none;
+            border: none;
+            background-color: $bg-py;
+            color: white;
+            letter-spacing: 2px;  
+        } 
+        .basket:hover{
+            box-shadow: 0 0 2px 2px $bg-sy;
+        }   
+        &__wrapper{
+            width: 211px;
+            height: 55px;
+            .navbar__btn{
+                @include btn($bg-py, $size: 17px, $textBg: #fff);
+            }
+            .navbar__btn:hover{
+                box-shadow: 0 0 2px 2px $bg-sy;
+            }
+        }
+        .open__div {
+            width: 100%;
+            padding: 10px;
+            overflow: hidden;
+            height: 0px;
+            transition: 0.3s all linear;
+            .text {
+                display: inline-block;
+                width: 100%;
+                padding: 10px 0;
+                transition: 0.3s all linear;
+                margin: 8px;
+                font-size: 18px;
+                letter-spacing: 3px;
+            }
+            .text:hover {
+                transition: 0.3s all linear;
+                padding-left: 10px;
+                color: red;
+                box-shadow: 0px 5px 4px 4px $bg-py;
+            }
+        }
+        .new {
+            margin-top: 30px;
+            height: 240px;
+            transition: 0.3s all linear;
+        }
+        .new1 {
+            height: 0;
+            transition: 0.3s all linear;
+        }    
+    }
+}   
+
+
+@media (max-width:1100px) {
+    .header{
+        .navbar{
+            margin: 0;
+            padding: 20px;
+            &__controller{
+                width: 40%;
+            }
+        }
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.044);
+    }
+}
+
+@media (max-width: 900px){
+    .header{
+        .navbar{
+            &__wrapper{
+                @include df(row, wrap, center, space-between);
+                width: 50%;
+            }
+            &__controller{
+                display: none;
+            }
+            .basket{
+                display: block;
+                height: 45px;
+            }
+            .navbar__btn{
+                height: 45px;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .header{
+        .navbar{
+
+            &__controller{
+                display: none;
+            }
+            .basket{
+                display: block;
+                height: 40px;
+            }
+            &__wrapper{
+                width: 55%;
+                .navbar__btn{
+                    width: 150px;
+                    height: 40px;
+                }
+                .basket{
+                    display: block;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px){
+    .header{
+        .navbar{
+            &__img{
+                width: 150px;
+                height: 40px;
+                .navbar__image{                
+                    background-size: contain;    
+                 }
+            }
+            &__controller{
+                display: none;
+            }
+            &__wrapper{
+                width: 55%;
+                .navbar__btn{
+                    width: 110px;
+                    height: 35px;
+                    font-size: 15px;
+                }
+                .basket{
+                    display: block;
+                    height: 35px;
+                    font-size: 15px;
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.logotip{
+    width: 100%;
+    .logotip__wrapper{
+        width: 100%;
+        padding: 60px 0;
+        @include df(row, wrap, center, space-between);
+        .logotip__images{
+            width: 150px;
+            height: 27px;
+            background-image: url('../assets/Group.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .logotip__images2{
+            width: 124px;
+            height: 30px;
+            background-image: url('../assets/Group\ \(1\).svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .logotip__images3{
+            width: 100px;
+            height: 47px;
+            background-image: url('../assets/Group\ \(2\).svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .logotip__images4{
+            width: 114px;
+            height: 28px;
+            background-image: url('../assets/Group\ \(3\).svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .logotip__images5{
+            width: 127px;
+            height: 30px;
+            background-image: url('../assets/Group\ \(4\).svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+     
+}
+
+@media (max-width:900px){
+    .logotip{
+        display: none;
+    }
+}

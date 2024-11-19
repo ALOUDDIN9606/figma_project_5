@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 1172px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+ul{
+    list-style: inherit;
+}
+
+.new {
+    height: 220px;
+    transition: 0.3s all linear;
+}
+.new1 {
+    height: 0;
+    transition: 0.3s all linear;
+}

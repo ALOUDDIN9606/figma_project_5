@@ -1,0 +1,71 @@
+.stage{
+    width: 100%;
+    padding: 70px 0;
+    .stages{
+        width: 100%;
+        text-align: center;
+        @include df(row, wrap, center, space-between);
+        &__boxs{
+            width: 320px;
+            @include df(column, wrap, center, center);
+            h3{
+                font-size: 24px;
+                padding: 15px 0;
+            }
+            p{
+                font-size: 16px;
+                color: $bg-sy;
+                line-height: 1.5;
+            }
+            .stages__img1{
+                width: 151px;
+                height: 98px;
+                background-image: url('../assets/Icon\ 001.png');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .stages__img2{
+                width: 151px;
+                height: 98px;
+                background-image: url('../assets/Icon\ 002.png');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .stages__img3{
+                width: 151px;
+                height: 98px;
+                background-image: url('../assets/Icon\ 003.png');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+@media (max-width:1100px){
+    .stage{
+        padding: 50px 0;
+        .stages{
+            justify-content: center;
+            gap: 40px;
+            &__boxs{
+                width: 40%;
+            }
+        }
+    }
+}
+@media (max-width:550px){
+    .stage{
+        padding: 50px 0;
+        .stages{
+            justify-content: center;
+            gap: 40px;
+            &__boxs{
+                width: 80%;
+            }
+        }
+    }
+}
